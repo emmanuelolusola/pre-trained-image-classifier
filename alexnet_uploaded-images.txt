@@ -1,0 +1,97 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+10 filenames from folder pet_images
+Filename:  Bird_01.jpg     label:  bird
+
+ 1 file:               Bird_01.jpg
+Filename:  Car_01.jpg     label:  car
+
+ 2 file:                Car_01.jpg
+Filename:  Dog_02.jpg     label:  dog
+
+ 3 file:                Dog_02.jpg
+Filename:  Dog_01.jpg     label:  dog
+
+ 4 file:                Dog_01.jpg
+
+Printing all key-value pairs in results_dic:
+
+filename:  Bird_01.jpg     pet labels:  bird
+
+filename:  Car_01.jpg     pet labels:  car
+
+filename:  Dog_02.jpg     pet labels:  dog
+
+filename:  Dog_01.jpg     pet labels:  dog
+
+Dictionary has 4 items
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                    Bird_01.jpg  label:                       bird
+ 2 key:                     Car_01.jpg  label:                        car
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                    Car_01.jpg: 
+Real:                        car   Classifier: beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+                   Bird_01.jpg: 
+Real:                       bird   Classifier: robin, american robin, turdus migratorius
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+     MATCH:
+
+                    Car_01.jpg: 
+Real:                        car   Classifier: beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                   Bird_01.jpg: 
+Real:                       bird   Classifier: robin, american robin, turdus migratorius  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+Model used: alexnet
+
+Number of Images: 4 
+Number of Dog Images: 2 
+Number of "Not-a" Dog Images: 2
+pct_match: 75.0
+pct_correct_dogs: 100.0
+pct_correct_breed: 100.0
+pct_correct_notdogs: 100.0
+
+** Total Elapsed Runtime: 0:1:0
